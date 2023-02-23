@@ -6,7 +6,7 @@
 /*   By: hde-camp <hde-camp@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 17:53:11 by hde-camp          #+#    #+#             */
-/*   Updated: 2023/02/21 15:40:58 by hde-camp         ###   ########.fr       */
+/*   Updated: 2023/02/23 16:39:48 by hde-camp         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,9 +71,18 @@ void Bureaucrat::signForm(AForm& form){
 	}
 	try{
 		form.beSigned(*this);
-		std::cout << "🧑‍💼 " + this->getName() << " signed " << form.getName() << std::endl;
+		std::cout << "🧑‍💼 " + this->getName() << " signed a " << form.getName() << " form for " << form.getTarget() <<std::endl;
 	}catch(std::exception& e){
 		std::cout << "🧑‍💼 " + this->getName() << " can't sign " << form.getName();
 		std::cout << ". Reason: " << e.what() << std::endl;;
+	}
+};
+void Bureaucrat::executeForm(AForm const & form){
+	try{
+		form.execute(*this);
+		std::cout << "🧑‍💼 " + this->getName() << " executed " << form.getName() << "." << std::endl;
+	}catch(std::exception& e){
+		std::cout << this->getName() << " can't execute " << form.getName() << ". Reason: " << std::endl;
+		std::cout << e.what() << std::endl;
 	}
 };

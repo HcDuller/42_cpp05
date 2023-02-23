@@ -6,7 +6,7 @@
 /*   By: hde-camp <hde-camp@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 14:26:56 by hde-camp          #+#    #+#             */
-/*   Updated: 2023/02/21 15:40:46 by hde-camp         ###   ########.fr       */
+/*   Updated: 2023/02/21 18:32:10 by hde-camp         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,6 @@ public:
 	void incrementGrade();
 	void decrementGrade();
 	void signForm(AForm& form);
+	void executeForm(AForm const & form);
 };
 std::ostream& operator<<(std::ostream& lhe, Bureaucrat& hermes);
