@@ -17,7 +17,7 @@
 
 PresidentialPardonForm::PresidentialPardonForm(): AForm(){};
 PresidentialPardonForm::PresidentialPardonForm(std::string target):
-	AForm("PresidentialPardon", target, 72, 45){};
+	AForm("PresidentialPardon", target, 25, 5){};
 PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm& origin): 
 	AForm(origin.getName(), origin.getTarget(), origin.getSignGrade(), origin.getExeGrade()){};
 PresidentialPardonForm& PresidentialPardonForm::operator=(const PresidentialPardonForm& origin){
