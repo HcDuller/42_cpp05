@@ -6,7 +6,7 @@
 /*   By: hde-camp <hde-camp@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 18:26:58 by hde-camp          #+#    #+#             */
-/*   Updated: 2023/02/21 14:11:55 by hde-camp         ###   ########.fr       */
+/*   Updated: 2023/02/24 13:13:34 by hde-camp         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void formTest(){
 	std::cout << "Stack allocation start" << std::endl;
 	{
 		Bureaucrat hermes("Hermes",33);
-		Form	laundry("Laundy", 50, 140);
+		Form	laundry("Laundry", 50, 140);
 		Form	acc("Accounting", 30, 50);
 		std::cout << hermes << std::endl;
 		std::cout << std::endl;
@@ -73,7 +73,7 @@ void formTest(){
 	std::cout << "Heap allocation start" << std::endl;
 	{
 		Bureaucrat* hermes = new Bureaucrat("Hermes",33);
-		Form*	laundry = new Form("Laundy", 50, 140);
+		Form*	laundry = new Form("Laundry", 50, 140);
 		Form*	acc = new Form("Accounting", 30, 50);
 		std::cout << *hermes << std::endl;
 		std::cout << std::endl;
