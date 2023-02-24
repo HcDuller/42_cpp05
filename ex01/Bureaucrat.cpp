@@ -6,7 +6,7 @@
 /*   By: hde-camp <hde-camp@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 17:53:11 by hde-camp          #+#    #+#             */
-/*   Updated: 2023/02/21 14:18:31 by hde-camp         ###   ########.fr       */
+/*   Updated: 2023/02/24 13:15:35 by hde-camp         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ std::ostream& operator<<(std::ostream& lhstream, Bureaucrat& hermes){
 void Bureaucrat::signForm(Form& form){
 	if (form.getSigned())
 	{
-		std::cout << "🧑‍💼 " + this->getName() << " can't sign " << form.getName() << ", it's already signed." << std::endl;
+		std::cout << "🧑‍💼 " + this->getName() << " can't sign " << form.getName() << ", it is already signed." << std::endl;
 		return;
 	}
 	try{
